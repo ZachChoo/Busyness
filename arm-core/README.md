@@ -1,0 +1,1 @@
+Using linux image from: https://www.intel.com/content/www/us/en/developer/topic-technology/fpga-academic/materials-sd-card-images.html

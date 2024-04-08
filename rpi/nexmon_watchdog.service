@@ -1,0 +1,13 @@
+[Unit]
+Description=Nexmon Error Watchdog
+After=network.target
+
+
+[Service]
+Type=forking
+User=root
+ExecStart=/home/pi/software/nexmon_watchdog.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

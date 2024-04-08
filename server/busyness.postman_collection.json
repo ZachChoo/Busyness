@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "91388f6e-e22e-4bb5-9810-e8cc47b6168b",
+		"name": "busyness",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "building operations",
+			"item": [
+				{
+					"name": "get all buildings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/get_all_buildings",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"get_all_buildings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one building",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/get_building/?id=622c6d1817daa44aa981e572",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"get_building",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "622c6d1817daa44aa981e572"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update building",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/update_building/?id=622c60d7d45bd9037bc55551&name=more updates&image=https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"update_building",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "622c60d7d45bd9037bc55551"
+								},
+								{
+									"key": "name",
+									"value": "more updates"
+								},
+								{
+									"key": "image",
+									"value": "https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create building",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/create_building/?name=new room 1&image=https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"create_building",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "new room 1"
+								},
+								{
+									"key": "image",
+									"value": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete building",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/delete_building/?id=622d1e610448f52bf320602c",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"delete_building",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "622d1e610448f52bf320602c"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "room operations",
+			"item": [
+				{
+					"name": "update room",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "device_count",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "623bff2308c4830ca9375025",
+									"type": "text"
+								},
+								{
+									"key": "roomid",
+									"value": "62335eb6f0a5fe212d5821e5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/update_room/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"update_room",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6230d7fd841cec91270244a7",
+									"disabled": true
+								},
+								{
+									"key": "roomid",
+									"value": "6230d89a498a49adbd5e4ec9",
+									"disabled": true
+								},
+								{
+									"key": "busyness",
+									"value": "14",
+									"description": "optional",
+									"disabled": true
+								},
+								{
+									"key": "roomName",
+									"value": "updated room 2",
+									"description": "optional",
+									"disabled": true
+								},
+								{
+									"key": "closingTime",
+									"value": "1",
+									"description": "optional",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create room",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/create_room/?id=6230d7fd841cec91270244a7&roomName=room4&closingTime=4 pm&busyness=44",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"create_room",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6230d7fd841cec91270244a7"
+								},
+								{
+									"key": "roomName",
+									"value": "room4"
+								},
+								{
+									"key": "closingTime",
+									"value": "4 pm"
+								},
+								{
+									"key": "busyness",
+									"value": "44"
+								},
+								{
+									"key": "date",
+									"value": "72",
+									"description": "optional",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete room",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/delete_room/?id=622c60d7d45bd9037bc55551&roomid=622d1be36396d7b3accd80dc",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"delete_room",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "622c60d7d45bd9037bc55551"
+								},
+								{
+									"key": "roomid",
+									"value": "622d1be36396d7b3accd80dc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all rooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/get_all_rooms/?id=622c60d7d45bd9037bc55551",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"get_all_rooms",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "622c60d7d45bd9037bc55551"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one room",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/test/?id=624c74a06bbe0da50991208f&roomid=624c7536ca7267e1ce92aa56",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"test",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "624c74a06bbe0da50991208f"
+								},
+								{
+									"key": "roomid",
+									"value": "624c7536ca7267e1ce92aa56"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get past busyness",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/get_past_busyness",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"get_past_busyness"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "is authenticated",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/is_authenticated",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"is_authenticated"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get jwt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/get_token",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"get_token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "https://busyness-344108.uw.r.appspot.com",
+			"type": "string"
+		}
+	]
+}

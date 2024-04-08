@@ -1,0 +1,5 @@
+*/node_modules/
+.vscode
+de1-software/a.out
+de1-software/exclusion.bin
+de1-software/history.bin

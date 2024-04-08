@@ -1,0 +1,3 @@
+[submodule "de1-software/vga-display/hagl"]
+	path = de1-software/vga-display/hagl
+	url = git@github.com:tuupola/hagl.git
